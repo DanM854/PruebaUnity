@@ -18,23 +18,23 @@ public class ChangeCOlor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _renderer = GetComponent<SpriteRenderer>();
-        ChangeColor();
-        ChangePos();
-        Debug.Log(string.Format("la posicion es {0} y su color es {1}", position, color));
+        //_renderer = GetComponent<SpriteRenderer>();
+        //ChangeColor();
+        //ChangePos();
+        //Debug.Log(string.Format("la posicion es {0} y su color es {1}", position, color));
         
     }
 
     // Update is called once per frame
     void ChangeColor()
     {
-        _renderer.color = Color.blue;
-        color = _renderer.color;
+        //_renderer.color = Color.blue;
+        //color = _renderer.color;
     }
 
     void ChangePos()
     {
-        transform.position = hexagono.transform.position;
-        position = transform.position.ToString();
+        //transform.position = hexagono.transform.position;
+        //position = transform.position.ToString();
     }
 }
