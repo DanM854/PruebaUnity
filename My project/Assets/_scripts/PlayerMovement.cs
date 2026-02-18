@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+    private OldInput _oldInput;
+
+    public float speed;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        _oldInput = GetComponent<OldInput>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Movement();
+    }
+
+    public void  Movement()
+    {
+        transform.Translate(Vector3.right * speed * 
+            _oldInput.horizontal * Time.deltaTime);
+        transform.Translate(Vector3.up * speed *
+            _oldInput.vertical * Time.deltaTime);
+    }
+}
