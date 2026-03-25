@@ -12,6 +12,7 @@ public class chest_animation : MonoBehaviour
         {
             Debug.Log("hola");
             animator.SetTrigger("openChest");
+            
         }
     }
 }
